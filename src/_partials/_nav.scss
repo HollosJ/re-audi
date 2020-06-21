@@ -1,0 +1,118 @@
+.Nav {
+  position: fixed;
+  z-index: 10;
+  font-family: $audi-extended;
+}
+
+.logo {
+  position: absolute;
+  left: 7rem;
+  top: 1.8rem;
+}
+
+.nav-btn-wrapper {
+  position: fixed;
+  margin: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 30px;
+  height: 20px;
+  z-index: 10;
+
+  .btn-bar1 {
+    top: 0;
+  }
+  .btn-bar3 {
+    bottom: 0;
+  }
+  .bar {
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.5s ease;
+    position: absolute;
+  }
+}
+
+.nav-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 85vh;
+
+  color: $white;
+
+  transform: translateY(-100%);
+  transition: all 0.8s ease;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr repeat(3, 1fr);
+  grid-template-areas:
+    "explore build"
+    "covid callback"
+    "other other"
+    "other other";
+
+  .nav-tile {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    h1 {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .nav__explore {
+    grid-area: explore;
+  }
+  .nav__build {
+    grid-area: build;
+  }
+  .nav__covid {
+    grid-area: covid;
+  }
+  .nav__callback {
+    grid-area: callback;
+  }
+  .nav__other {
+    grid-area: other;
+    background-color: black;
+    padding: 2rem 0;
+    ul {
+      width: 100%;
+      height: 100%;
+    }
+    li {
+      list-style: none;
+      font-size: 2rem;
+      transition: all 0.3s ease;
+      padding: 1rem 2rem;
+
+      &:hover {
+        background-color: rgba($white, 0.6);
+        cursor: pointer;
+        color: black;
+      }
+    }
+  }
+}
+
+.open {
+  transform: translateX(0);
+  .nav-menu {
+    top: 0;
+    left: 0;
+  }
+}

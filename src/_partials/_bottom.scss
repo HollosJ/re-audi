@@ -1,0 +1,137 @@
+.Tiles {
+  height: 100vh;
+  min-height: 86rem;
+  max-width: 100vw;
+  font-family: $audi-extended;
+  color: $white;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1.5fr repeat(6, 1fr);
+  grid-template-areas:
+    "discover discover"
+    "models models"
+    "used used"
+    "about electric"
+    "fleet fleet"
+    "build finance"
+    "book owners";
+}
+
+.tile {
+  position: relative;
+  overflow: hidden;
+
+  //Image styling
+  &__img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    background-position: bottom;
+    background-size: cover;
+    transition: all 0.3s ease;
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+
+    p,
+    h1,
+    .bar {
+      transition: all 0.3s ease;
+      position: absolute;
+    }
+
+    .bar {
+      background-color: $white;
+      height: 0.4rem;
+      width: 0;
+      bottom: 2rem;
+      left: 2rem;
+    }
+    h1 {
+      bottom: 2rem;
+      left: 2rem;
+    }
+    p {
+      opacity: 0;
+      bottom: 0rem;
+      left: 2rem;
+      font-family: $audi;
+    }
+  }
+
+  //Span styling
+
+  //Declaring grid areas =>
+  &__discover {
+    grid-area: discover;
+  }
+  &__models {
+    grid-area: models;
+  }
+  &__used {
+    grid-area: used;
+  }
+  &__about {
+    grid-area: about;
+  }
+  &__electric {
+    grid-area: electric;
+  }
+  &__fleet {
+    grid-area: fleet;
+  }
+
+  &__build {
+    grid-area: build;
+    background-color: $darkgrey;
+    color: $white;
+  }
+  &__finance {
+    grid-area: finance;
+    background-color: $grey;
+    color: black;
+    .bar {
+      background-color: black;
+    }
+  }
+  &__book {
+    grid-area: book;
+    background-color: $red;
+    color: $white;
+  }
+  &__owners {
+    .bar {
+      background-color: black;
+    }
+
+    grid-area: owners;
+    background-color: $white;
+    color: black;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tile:hover {
+    .tile__text {
+      .bar {
+        width: 15rem;
+        bottom: 9rem;
+      }
+
+      h1 {
+        bottom: 6rem;
+      }
+
+      p {
+        opacity: 1;
+        bottom: 2.2rem;
+      }
+    }
+  }
+}

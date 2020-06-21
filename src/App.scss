@@ -1,0 +1,97 @@
+/*=========INDEX=========
+1. RESETS
+2. VARIABLES
+
+
+  MEDIA QUERIES
+=======================*/
+@import url("https://fonts.cdnfonts.com/css/audi-type-2");
+@import url("https://fonts.cdnfonts.com/css/audi-type-extended");
+
+$red: #bb0a30;
+$white: #ffffff;
+$grey: #b6b1a9;
+$darkgrey: #333333;
+$audi: "Audi Type", sans-serif;
+$audi-extended: "Audi Type Extended", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+
+  -ms-overflow-style: none;
+  font-family: $audi;
+}
+
+//removes scrollbar on chrome
+::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+@import "_partials/nav";
+@import "_partials/top";
+@import "_partials/bottom";
+
+//768px
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 68.75%;
+  }
+  .Tiles {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+      "discover discover used about"
+      "discover discover used electric"
+      "models models fleet fleet"
+      "build finance book owners";
+  }
+
+  .nav-menu {
+    width: 90vw;
+    height: 100vh;
+    transform: translateY(0) translateX(-100%);
+
+    grid-template-areas:
+      "explore other"
+      "build other"
+      "covid other"
+      "callback other";
+  }
+  .open {
+    transform: translateX(0);
+  }
+}
+
+//992px
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+  .tile:hover {
+    .tile__img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+//1200px
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 81.25%;
+  }
+}
