@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/re-audi/static/css/main.b307ee96.chunk.css",
-    "main.js": "/re-audi/static/js/main.8ceb90a2.chunk.js",
-    "main.js.map": "/re-audi/static/js/main.8ceb90a2.chunk.js.map",
+    "main.css": "/re-audi/static/css/main.b01bf4e8.chunk.css",
+    "main.js": "/re-audi/static/js/main.53e3615f.chunk.js",
+    "main.js.map": "/re-audi/static/js/main.53e3615f.chunk.js.map",
     "runtime-main.js": "/re-audi/static/js/runtime-main.cb53f980.js",
     "runtime-main.js.map": "/re-audi/static/js/runtime-main.cb53f980.js.map",
     "static/js/2.c8f29a0a.chunk.js": "/re-audi/static/js/2.c8f29a0a.chunk.js",
     "static/js/2.c8f29a0a.chunk.js.map": "/re-audi/static/js/2.c8f29a0a.chunk.js.map",
     "index.html": "/re-audi/index.html",
-    "precache-manifest.86c635436443ad19596701b1420b75a2.js": "/re-audi/precache-manifest.86c635436443ad19596701b1420b75a2.js",
+    "precache-manifest.a266919c811a4ffb3782125a25b07ab7.js": "/re-audi/precache-manifest.a266919c811a4ffb3782125a25b07ab7.js",
     "service-worker.js": "/re-audi/service-worker.js",
-    "static/css/main.b307ee96.chunk.css.map": "/re-audi/static/css/main.b307ee96.chunk.css.map",
+    "static/css/main.b01bf4e8.chunk.css.map": "/re-audi/static/css/main.b01bf4e8.chunk.css.map",
     "static/js/2.c8f29a0a.chunk.js.LICENSE.txt": "/re-audi/static/js/2.c8f29a0a.chunk.js.LICENSE.txt",
     "static/media/audilogo.svg": "/re-audi/static/media/audilogo.89a3ae07.svg",
     "static/media/hero-poster.jpg": "/re-audi/static/media/hero-poster.89d5a246.jpg",
@@ -27,7 +27,7 @@
   "entrypoints": [
     "static/js/runtime-main.cb53f980.js",
     "static/js/2.c8f29a0a.chunk.js",
-    "static/css/main.b307ee96.chunk.css",
-    "static/js/main.8ceb90a2.chunk.js"
+    "static/css/main.b01bf4e8.chunk.css",
+    "static/js/main.53e3615f.chunk.js"
   ]
 }

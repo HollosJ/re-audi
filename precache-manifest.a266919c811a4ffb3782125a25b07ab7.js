@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f36ba42f4a1fe99cc90489091dbd2c8",
+    "revision": "fb12723365e9e46634287179eaaf59a0",
     "url": "/re-audi/index.html"
   },
   {
-    "revision": "be7f2cb0bd202a9f134d",
-    "url": "/re-audi/static/css/main.b307ee96.chunk.css"
+    "revision": "5fcbcd47f1afb7356266",
+    "url": "/re-audi/static/css/main.b01bf4e8.chunk.css"
   },
   {
     "revision": "6d619a73ea1b9bc8a30c",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/re-audi/static/js/2.c8f29a0a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "be7f2cb0bd202a9f134d",
-    "url": "/re-audi/static/js/main.8ceb90a2.chunk.js"
+    "revision": "5fcbcd47f1afb7356266",
+    "url": "/re-audi/static/js/main.53e3615f.chunk.js"
   },
   {
     "revision": "c40f076ac367ea220214",
